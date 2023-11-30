@@ -120,7 +120,7 @@ sayilar.forEach((item) => {
 
 // 3c çözümü:
 
-/* kodlar buraya */
+ucebolunenlerintoplami = sayilar.reduce((total, num) => total + num, 0);
 
 // 3d çözümü
 
