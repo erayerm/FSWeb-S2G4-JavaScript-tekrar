@@ -1,5 +1,7 @@
 /* Aşağıda global olarak tanımlanmış değişkenler bulunmaktadır, bunları değiştirmeyiniz. Açıklamaları takip ederek görevleri tamamlayın. */
 
+console.log("Eray Ermemiş");
+
 const pi = 3.14159;
 
 const sayilar = [
