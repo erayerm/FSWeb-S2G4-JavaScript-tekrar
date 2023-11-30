@@ -124,7 +124,11 @@ ucebolunenlerintoplami = sayilar.reduce((total, num) => total + num, 0);
 
 // 3d çözümü
 
-/* kodlar buraya */
+besyuzdenkucuksayilar = sayilar.filter(checkFiveHundred);
+
+function checkFiveHundred(sayi) {
+  return sayi < 500;
+}
 
 // 3e çözümü
 
