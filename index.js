@@ -97,7 +97,7 @@ let ucetambolunenler = [],
   ucebolunenlerintoplami,
   besyuzdenkucuksayilar,
   siralisayilar,
-  tekraredensayilar;
+  tekraredensayilar = [];
 
 // 3a çözümü
 
@@ -136,7 +136,13 @@ siralisayilar = besyuzdenkucuksayilar.sort((a, b) => a - b);
 
 // 3f çözümü
 
-/* kodlar buraya */
+//"{sayı} sayısı {tekrarSayisi} kere tekrar edilmiştir"
+const numbersObject = {}
+
+for (let i = 0; i < sayilar.length; i++)
+  numbersObject[sayilar[i]] === undefined ? numbersObject[sayilar[i]] = 1 : numbersObject[sayilar[i]]++;
+
+tekraredensayilar = Object.keys(numbersObject).map((key) => key + " sayısı " + numbersObject[key] + " kere tekrar edilmiştir");
 
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
 
